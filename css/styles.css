@@ -1,0 +1,502 @@
+body {
+  font-family: "Montserrat";
+  background-color: #8584c4;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-size: 2.8rem;
+  line-height: 1.5;
+  padding: 0 0 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 2.1rem;
+  padding: 0 0 4rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// Navbar ///// */
+
+
+.navlogo {
+  max-width: 15rem;
+  margin: 0;
+  object-fit: cover;
+}
+
+.nav-item {
+  padding: 0 18px;
+  margin: 0;
+  width: max-content;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin: 0;
+  width: max-content;
+  font-weight: lighter;
+}
+
+
+
+.cta,
+#footer
+ {
+  padding: 3% 10% 7%;
+  margin: 0;
+
+}
+
+.title-row,
+.about-row,
+.cta-row
+ {
+  margin: auto;
+  width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ///// Title ///// */
+
+.title-row {
+  padding: 5% 0;
+  display: flex;
+  color: #fff;
+  height: 45vh;
+  justify-content: center;
+}
+
+.title-row h1 {
+  width: 100%;
+}
+
+
+.title-image {
+  margin-top: 45px;
+  position: absolute;
+  z-index: 0;
+  transform: rotate(10deg);
+  height: 38vw;
+}
+
+
+.btn,
+a {
+  font-family: "Montserrat";
+  /* margin: 5%; */
+  align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// Features ///// */
+#features {
+  padding: 7% 12%;
+  position: relative;
+  background: #fff;
+  display: flex;
+  border-radius:  5px;;
+  width: 100%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-box > p {
+  color: #343a40;
+  margin-top: 1rem;
+}
+
+.icon {
+  color: #8584c4;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #827397;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// About ///// */
+#about {
+  text-align: center;
+  padding: 7% 12%;
+  background: #8584c4;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 3em;
+  margin: 0 auto;
+}
+
+.about > h2 {
+  margin: 0;
+}
+
+.image {
+  padding: 1%;
+  height: 50%;
+  position: absolute;
+}
+
+.aboutp {
+  color: #fff;
+}
+
+
+
+
+
+/* What We Do */
+
+#whatwedo {
+  text-align: center;
+  padding: 10% 12%;
+  background: #ffffff;
+  color: #8584c4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.alt-title {
+  padding: 5% 0;
+  display: flex;
+  color: #fff;
+  height: 50vh;
+}
+
+.whatwedo-p {
+  color: #8584c4;
+
+}
+
+.whatwedo-image {
+  padding: 5%;
+  height: 90%;
+  margin: 0;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //// Blog //// */
+
+.blog-grid {
+  padding: 10em 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5vw;
+  row-gap: 5vw;
+  background-color: #fff;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-post p {
+  color: #343a40;
+
+}
+
+.blog-post > img {
+  width: 100%;
+  margin-bottom: 9vh;
+}
+
+.blogpage,
+.blog-author,
+.blogbody, 
+span {
+  color: white;
+}
+
+.blog-author {
+  margin-bottom: 6rem;
+}
+
+.blog-btn {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10vh;
+
+}
+
+.c0, .c1, .c2, .c3, .c4, .c5, .c6, .c7 {
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+/* ///// Pricing ///// */
+#pricing {
+  margin-top: 5rem;
+  text-align: center;
+  padding: 10% 10%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.container {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .container {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.btn1 {
+  margin-top: 1rem;
+}
+.pricehead {
+  padding: 0 0 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.pricelow {
+  color: #000;
+}
+
+.pricelowest {
+  padding: .8rem 0 1.8rem;
+  color: Black;
+}
+
+.pricebody {
+  padding: 0 0 1rem;
+}
+
+.list-unstyled {
+  color: Black;
+  
+}
+
+.my-0 {
+  color: #8584c4;
+}
+
+.card-title {
+  color: #000;
+}
+
+.h2 {
+  padding: .33rem 0 2.5rem;
+}
+
+#cta {
+  padding: 2rem 0;
+  background-color: #8584c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.ctahead {
+  padding-top: 5vh;
+}
+
+.cta-row {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+
+#footer {
+  background-color: #ffffff50;
+  padding: 2em 10em .1em;
+}
+
+.footer {
+  padding: 2em 0 0.1em;
+  margin: auto;
+  color: #00000071;
+  display: flex;
+  flex-direction: column;
+}
+
+.footertop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footertop p {
+  width: 30vw;
+  color: #000;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: #00000071;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+
+@media (max-width: 991px) {
+  h1 {
+    text-align: center;
+  }
+
+  .title-image {
+    position: relative;
+    display: none;
+  }
+
+  .title-row {
+    padding-top: 10%;
+  flex-direction: column;
+  text-align: center;
+  }
+
+  #about {
+  grid-template-columns: .1fr 1fr;
+  column-gap: -5em;
+  }
+  
+  #features {
+    flex-direction: column;
+  }
+
+  #footer {
+    padding: 2em 2em .1em;
+  }
+  .footertop {
+    flex-direction: column;
+  }
+  .footertop p {
+    width: 60vw;
+  }
+
+  #whatwedo {
+    padding: 8% 6%;
+  }
+
+
+}
+
+
