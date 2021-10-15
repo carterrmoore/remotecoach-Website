@@ -65,8 +65,13 @@ p {
   padding: 0 10%;
 }
 
+.navbar-toggler {
+  background-color: #ffffff13;
+  font-size: 2.5rem;
+}
+
 .navlogo {
-  max-width: clamp(8rem, 5rem + 10vw, 15rem);
+  max-width: 15rem;
   margin: 0;
   object-fit: cover;
 }  
@@ -448,7 +453,7 @@ span {
 }
 
 #cta {
-  padding: 2rem 0;
+  padding: 2rem;
   background-color: #8584c4;
   display: flex;
   flex-direction: column;
@@ -522,9 +527,48 @@ span {
 
 @media (max-width: 991px) {
 
+  h1 {
+    font-family: "Montserrat";
+    font-size: 3.8rem;
+  }
+  
+  h2 {
+    font-family: "Montserrat";
+    font-size: 2.8rem;
+  }
+  
+  h3 {
+    font-family: "Montserrat";
+    font-size: 2rem;
+  }
+  
+  p {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+   
+  }
+  
+  .navbar-nav{
+    padding: 2rem 0; 
+ }
+
+  .navbar-nav a {
+    font-size: 2.5rem;
+  }
+
   .navbar {
   background-color: #ffffff13;
+  padding: 5% 10%;
+  }
 
+  .navlogo {
+    max-width: 20rem;
+  }
+
+  .btn {
+    font-size: 3rem;
+    padding: .3em .7em;
+    margin: 0 .3em;
   }
 
   h1 {
@@ -543,8 +587,8 @@ span {
   }
 
 .alt-title {
-  height: 30%;
-  padding: 7% 3%;
+  height: 40%;
+  padding: 7% 5%;
   align-items: center;
 }
 
