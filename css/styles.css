@@ -6,7 +6,7 @@ body {
 
 h1 {
   font-family: "Montserrat";
-  font-size: 2.8rem;
+  font-size: clamp(4rem, 3.5vw, 3.5rem);
   line-height: 1.5;
   padding: 0 0 1rem;
   text-align: center;
@@ -14,20 +14,20 @@ h1 {
 
 h2 {
   font-family: "Montserrat";
-  font-size: 2.1rem;
-  padding: 0 0 4rem;
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  padding: 0 0 2rem;
   text-align: center;
 }
 
 h3 {
   font-family: "Montserrat";
-  font-size: 1.5rem;
+  font-size: clamp(1.8rem, 3.2vw, 3.2rem);
   text-align: center;
 }
 
 p {
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
   text-align: center;
   color: #fff;
 }
@@ -62,16 +62,17 @@ p {
 /* ///// Navbar ///// */
 
 .navbar {
-  padding: 0 10%;
+  padding: 2% 10%;
+  width: 100%;
 }
 
 .navbar-toggler {
   background-color: #ffffff13;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .navlogo {
-  max-width: 15rem;
+  max-width: 10rem;
   margin: 0;
   object-fit: cover;
 }  
@@ -215,19 +216,23 @@ a {
   grid-template-columns: 1fr 2fr;
   row-gap: 3em;
   margin: 0 auto;
+  align-items: center;
 }
+
 
 .about > h2 {
   margin: 0;
 }
 
 .image {
-  padding: 1%;
-  height: 50%;
-  position: absolute;
-}
+  padding: 6%;
+  max-width: 75%;
+  border: 2px solid #ffffff3e;
+  border-radius: 50%;
+  object-fit: cover;
+  }
 
-.aboutp {
+.about p {
   color: #fff;
 }
 
@@ -239,11 +244,18 @@ a {
 
 #whatwedo {
   text-align: center;
-  padding: 10% 12%;
-  background: #ffffff;
+  padding: 10% 6%;
+  background: white;
   color: #8584c4;
-  display: flex;
-  justify-content: space-between;
+}
+
+.whatwedo-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 3vw;
+  row-gap: 3vw;
+  align-items: center;
+
 }
 
 .alt-title {
@@ -253,16 +265,16 @@ a {
   height: 50vh;
 }
 
-.whatwedo-p {
-  color: #8584c4;
 
+.whatwedo p {
+  color: #8584c4;
 }
 
 .whatwedo-image {
-  padding: 5%;
-  height: 90%;
+  margin: 5%;
+  height: 100%;
   margin: 0;
-  display: inline-block;
+  object-fit: cover;
 }
 
 
@@ -410,6 +422,15 @@ span {
 
 .card-deck .card {
   min-width: 220px;
+  display: flex;
+}
+
+.card-title {
+  color: #000;
+}
+
+.card-body {
+  font-size: 1.2rem;
 }
 
 .btn1 {
@@ -444,9 +465,6 @@ span {
   color: #8584c4;
 }
 
-.card-title {
-  color: #000;
-}
 
 .h2 {
   padding: .33rem 0 2.5rem;
@@ -454,6 +472,7 @@ span {
 
 #cta {
   padding: 2rem;
+  margin-bottom: 5vh;
   background-color: #8584c4;
   display: flex;
   flex-direction: column;
@@ -528,23 +547,23 @@ span {
 @media (max-width: 991px) {
 
   h1 {
-    font-family: "Montserrat";
-    font-size: 3.8rem;
-  }
-  
-  h2 {
-    font-family: "Montserrat";
+    
     font-size: 4rem;
   }
   
+  h2 {
+    
+    font-size: 3.5rem;
+  }
+  
   h3 {
-    font-family: "Montserrat";
-    font-size: 2.4rem;
+    
+    font-size: 3rem;
   }
   
   p, a {
-    font-family: "Montserrat";
-    font-size: 3.5rem;
+    
+    font-size: 2.5rem;
    
   }
   
@@ -566,9 +585,9 @@ span {
   }
 
   .btn {
-    font-size: 3rem;
-    padding: .3em .7em;
-    margin: 0 .3em;
+    font-size: 2.8rem;
+    padding: .4em .8em;
+    margin: .5em .3em;
   }
 
   h1 {
@@ -581,21 +600,38 @@ span {
   }
 
   .title-row {
-    padding-top: 10%;
-  flex-direction: column;
-  text-align: center;
+    padding-top: 5%;
+    height: max-content;
+    flex-direction: column;
+    text-align: center;
   }
 
 .alt-title {
-  height: 40%;
+  height: max-content;
   padding: 7% 5%;
   align-items: center;
 }
 
+.card-deck {
+  flex-direction: column;
+}
+
+.card-header h4 {
+  font-size: 3rem;
+}
+
+.card-body {
+  font-size: 2.5rem;
+}
+
+
   #about {
-  grid-template-columns: .1fr 1fr;
-  column-gap: -5em;
+  grid-template-columns: 1fr;
   margin: auto;
+  }
+
+  .image {
+    max-width: 30%;
   }
   
   #features {
@@ -609,11 +645,20 @@ span {
     flex-direction: column;
   }
   .footertop p {
-    width: 60vw;
+    width: 90vw;
   }
 
   #whatwedo {
     padding: 8% 6%;
+  }
+  
+  .whatwedo-row {
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+  }
+
+  .whatwedo-image {
+    height: 100%;
   }
 
   .blog-grid {
@@ -635,6 +680,7 @@ span {
     grid-template-columns: 1fr;
     align-items: center;
     row-gap: 4%;
+    min-height: 150vh;
     overflow: scroll;
 }
 .serviceimg {
