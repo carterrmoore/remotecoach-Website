@@ -393,7 +393,7 @@ span {
 
 
 
-/* ///// Pricing ///// */
+/* ///// Cards - Pricing ///// */
 #pricing {
   margin-top: 5rem;
   text-align: center;
@@ -470,6 +470,30 @@ span {
   padding: .33rem 0 2.5rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //// CTA //// */
+
 #cta {
   padding: 2rem;
   margin-bottom: 5vh;
@@ -534,6 +558,37 @@ span {
 
 
 
+/* //// CONTACT //// */
+
+.contactform {
+  display: flex;
+  width: 100%;
+  padding: 10%;
+  justify-content: center;
+  background-color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -546,6 +601,7 @@ span {
 
 @media (max-width: 991px) {
 
+  
   h1 {
     
     font-size: 4rem;
@@ -564,72 +620,72 @@ span {
   p, a {
     
     font-size: 2.5rem;
-   
+    
   }
   
   .navbar-nav{
     padding: 2rem 0; 
- }
-
+  }
+  
   .navbar-nav a {
     font-size: 2.5rem;
   }
-
+  
   .navbar {
-  background-color: #ffffff13;
-  padding: 5% 10%;
+    background-color: #ffffff13;
+    padding: 5% 10%;
   }
-
+  
   .navlogo {
     max-width: 20rem;
   }
-
+  
   .btn {
     font-size: 2.8rem;
     padding: .4em .8em;
     margin: .5em .3em;
   }
-
+  
   h1 {
     text-align: center;
   }
-
+  
   .title-image {
     position: relative;
     display: none;
   }
-
+  
   .title-row {
     padding-top: 5%;
     height: max-content;
     flex-direction: column;
     text-align: center;
   }
-
-.alt-title {
-  height: max-content;
-  padding: 7% 5%;
-  align-items: center;
-}
-
-.card-deck {
-  flex-direction: column;
-}
-
-.card-header h4 {
-  font-size: 3rem;
-}
-
-.card-body {
-  font-size: 2.5rem;
-}
-
-
-  #about {
-  grid-template-columns: 1fr;
-  margin: auto;
+  
+  .alt-title {
+    height: max-content;
+    padding: 17% 5%;
+    align-items: center;
   }
-
+  
+  .card-deck {
+    flex-direction: column;
+  }
+  
+  .card-header h4 {
+    font-size: 3rem;
+  }
+  
+  .card-body {
+    font-size: 2.5rem;
+  }
+  
+  
+  #about {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  
   .image {
     max-width: 30%;
   }
@@ -637,7 +693,7 @@ span {
   #features {
     flex-direction: column;
   }
-
+  
   #footer {
     padding: 2em 2em .1em;
   }
@@ -647,7 +703,7 @@ span {
   .footertop p {
     width: 90vw;
   }
-
+  
   #whatwedo {
     padding: 8% 6%;
   }
@@ -656,25 +712,25 @@ span {
     grid-template-columns: 1fr;
     row-gap: 5vh;
   }
-
+  
   .whatwedo-image {
     height: 100%;
   }
-
+  
   .blog-grid {
     grid-template-columns: 1fr;
   }
-
+  
   .blog-post {
     padding-bottom: 6vh;
     padding-top: 2vh;
     border-bottom: 12px solid #f5f5f5;
   }
-
+  
   .blog-post p { 
     margin: .5em 0 1em;
   }
-
+  
   #services {
     padding: 10% 3%;
     grid-template-columns: 1fr;
@@ -682,12 +738,15 @@ span {
     row-gap: 4%;
     min-height: 150vh;
     overflow: scroll;
-}
-.serviceimg {
-  max-width: 90vw;
-  object-fit: cover;
-}
-
+  }
+  .serviceimg {
+    max-width: 90vw;
+    object-fit: cover;
+  }
+  
+  form {
+    width: 90%;
+  }
 
 
 }
